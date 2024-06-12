@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Local LLM | @antonioalanxs</title>
+
+    <link rel="icon" href="./img/favicon.svg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- JavaScript -->
+    <script type="module" src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <ul>
+        <li class="spinner">
+          <i></i>
+          <h4>Loading...</h4>
+          <h5>This may take a while.</h5>
+        </li>
+      </ul>
+    </main>
+
+    <form>
+      <input placeholder="Send a message..." />
+      <button disabled>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="none"
+          viewBox="0 0 32 32"
+          class="icon-2xl"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M15.192 8.906a1.143 1.143 0 0 1 1.616 0l5.143 5.143a1.143 1.143 0 0 1-1.616 1.616l-3.192-3.192v9.813a1.143 1.143 0 0 1-2.286 0v-9.813l-3.192 3.192a1.143 1.143 0 1 1-1.616-1.616z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </form>
+
+    <small>&nbsp;</small>
+
+    <template id="message-template">
+      <li class="message">
+        <span></span>
+        <p></p>
+      </li>
+    </template>
+  </body>
+</html>
